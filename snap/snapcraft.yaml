@@ -36,7 +36,7 @@ parts:
       - python-gtop
       - libc6
       - libglib2.0-0
-      - libpython2.6
+      - libpython-all-dev
       
     stage-packages:
       - python2
@@ -53,7 +53,7 @@ parts:
       - python-gtop
       - libc6
       - libglib2.0-0
-      - libpython2.6
+      - libpython-all-dev
       
     source-type: git
     source: https://github.com/kz6fittycent/nanny
