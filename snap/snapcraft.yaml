@@ -33,7 +33,7 @@ parts:
       - python-twisted-web
       - python-imaging
       - python-hachoir-regex
-      - python-gtop
+      - libgtop2-dev
       - libc6
       - libglib2.0-0
       - libpython-all-dev
@@ -50,7 +50,7 @@ parts:
       - python-twisted-web
       - python-imaging
       - python-hachoir-regex
-      - python-gtop
+      - libgtop2-dev
       - libc6
       - libglib2.0-0
       - libpython-all-dev
