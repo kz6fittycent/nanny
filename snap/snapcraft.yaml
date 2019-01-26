@@ -1,0 +1,61 @@
+name: nanny
+version: git
+summary: Gnome-Nanny is a parental control system designed for the Gnome Desktop
+description: |
+  Gnome-Nanny is a parental control system designed for the Gnome Desktop
+grade: stable
+confinement: strict
+
+apps:
+  nanny: 
+    command: desktop-launch $SNAP/bin/nanny
+    desktop: usr/share/applications/nanny-admin-console.desktop
+    plugs: 
+      - network
+      - home
+      - unity7
+      - x11
+      - desktop
+      - desktop-legacy
+      - browser-support
+    
+parts:
+  nanny:
+    build-packages:
+      - python2
+      - python-control
+      - python-gtk2
+      - python-gnome2
+      - python-glade2
+      - python-dbus
+      - python-sqlite
+      - python-twisted-core
+      - python-twisted-web
+      - python-imaging
+      - python-hachoir-regex
+      - python-gtop
+      - libc6
+      - libglib2.0-0
+      - libpython2.6
+      
+    stage-packages:
+      - python2
+      - python-control
+      - python-gtk2
+      - python-gnome2
+      - python-glade2
+      - python-dbus
+      - python-sqlite
+      - python-twisted-core
+      - python-twisted-web
+      - python-imaging
+      - python-hachoir-regex
+      - python-gtop
+      - libc6
+      - libglib2.0-0
+      - libpython2.6
+      
+    source-type: git
+    source: https://github.com/kz6fittycent/nanny
+    after: [desktop-gtk2]
+    plugin: cmake
