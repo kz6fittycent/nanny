@@ -22,7 +22,7 @@ apps:
 parts:
   nanny:
     build-packages:
-      - python2
+      - python
       - python-cachecontrol
       - python-gtk2
       - python-gnome2
@@ -39,7 +39,7 @@ parts:
       - libpython-all-dev
       
     stage-packages:
-      - python2
+      - python
       - python-cachecontrol
       - python-gtk2
       - python-gnome2
