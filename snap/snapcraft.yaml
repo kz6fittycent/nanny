@@ -23,7 +23,7 @@ parts:
   nanny:
     build-packages:
       - python2
-      - python-control
+      - python-cachecontrol
       - python-gtk2
       - python-gnome2
       - python-glade2
@@ -40,7 +40,7 @@ parts:
       
     stage-packages:
       - python2
-      - python-control
+      - python-cachecontrol
       - python-gtk2
       - python-gnome2
       - python-glade2
