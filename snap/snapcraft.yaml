@@ -58,4 +58,4 @@ parts:
     source-type: git
     source: https://github.com/kz6fittycent/nanny
     after: [desktop-gtk2]
-    plugin: cmake
+    plugin: make
